@@ -9,8 +9,7 @@
 <body>
     <div class="content">
         <div class="header">
-            <h2>CRUD USING PHP</h2>
-            <p>
+            
                 Create, Read, Update and Delete... with sniper14
             </p>
         </div>
@@ -18,7 +17,11 @@
 
             <div>
                 <?php require_once("./backend/config.php");?>
-                
+                <?php if(count($errors) > 0):?>
+                    <?php foreach($errors as $error):?>
+                        <p><?php print $error;?></p>
+                    <?php endforeach;?>
+                <?php endif;?>
                 <form action="" method="post">
                     <div class="form-group">
                         <label for="username">Username</label>
