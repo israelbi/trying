@@ -14,7 +14,6 @@
             </p>
         </div>
         <div class="body">
-
             <div>
                 <?php require_once("./backend/config.php");?>
                 <?php if(count($errors) > 0):?>
